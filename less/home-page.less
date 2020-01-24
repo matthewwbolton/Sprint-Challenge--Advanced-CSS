@@ -78,10 +78,12 @@
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
    .flex-center();
+   animation-name: test-animation;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
 
    @media @phone{
-      flex-direction: column-reverse;
-      align-items: center;
+      .flex-column-reverse();
       padding: 0;
    }//closing brackets for .walk @phone
 
