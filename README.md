@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    Adaptive websites use media queries to adapt to the width of the browser at specific media breakpoints. So, the site will adapt according to several different screen sizes, i.e. mobile vs tablet vs desktop, depending on what is specified by the design. On the other hand, fully responsive sites respond to the size of the browser at any given point, not just specified media break points. With responsive sites, the site will adjust layout and functionality specific to whatever screen size the end-user may be viewing it on.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    A mobile first website is one that is designed first for mobile screens using the min-width property for its media break points. It is then scaled upwards for larger screens. A desktop first site is designed first for larger screens using the max-width property for its media break points and then scaled downward for smaller screen sizes.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    Placing a CSS style rule of font-size: 62.5% in the HTML tag allows for the end-user to change the font settings of their browser to increase or decrease the size of the displayed font on the webpage when rem units are used by the site designer. 62.5% of 16 pixels is equal to 10 pixels. Therefore, 1 rem unit is equal to 10 pixels, which makes the math for determining font sizes easier for the developer building the site. Pixels measurements are hard-coded and do not change whereas rem units are responsive. Therefore, it is best practice to use rem units for font-sizes when developing a site with accessibility in mind.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessors are programs that provide many features to a developer that are not available in vanilla CSS. These features are powerful tools to help developers keep their code more organized and therefore easier to maintain, as well as prevent developers from having to rewrite the same code over and over again. Some examples of these preprocessing features include functions, mixins, parametrics mixins, variables and escaping with media queries, to name a few.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    My favorite feature in preprocessing would have to be its use of nesting. For me it is easier to style a page while following the natural flow of the HTML code. It really helps me keep everything organized making it easier to make adjustments when needed, especially pertaining to media queries. None of the concepts that we have covered thus far have given me any trouble. If anything, the use of preprocessors has increased my understanding of CSS and how it should be organized when styling a page.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
