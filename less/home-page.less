@@ -4,6 +4,13 @@
 
   .intro {
 
+    img{
+
+      @media @phone{
+        max-width: 100%
+      }//closing brackets for .intro img @phone
+    }//closing brackets for .intro img
+
     h2 {
       padding: 15px;
     }
@@ -19,13 +26,40 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone{
+      justify-content: center;
+    }//closing brackets for .space-images @phone
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
-  }
+  }//closing bracket for .space-images img
+
+    .img-1{
+
+      @media @phone{
+        width: 100%;
+      }//closing brackets for .space-images .img-1 @phone
+
+    }//closing brackets for .space-images .img-1
+
+    .img-2{
+
+      @media @phone{
+        display: none;
+      }//closing brackets for .space-images .img-2 @phone
+    }//closing bracket for .space-images .img-2
+
+    .img-3{
+
+      @media @phone{
+        display: none;
+      }//closing brackets for .space-images .img-3 @phone
+    }//closing brackets for .space-images .img-3
+
+  }//closing bracket for .space-images
 
   .visit-planets {
     padding: 15px;
@@ -43,11 +77,23 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+   .flex-center();
+   animation-name: test-animation;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+
+   @media @phone{
+      .flex-column-reverse();
+      padding: 0;
+   }//closing brackets for .walk @phone
 
     .walk-text {
       width: 50%;
+
+      @media @phone{
+        width: 100%;
+        padding: 3%;
+      }//closing brackets for .walk-text @phone
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +104,32 @@
       }
 
       .btn {
-      }
+
+        button{
+          .button(@wild-sand, @btn-bg-color);
+          border-radius: 5px;
+          padding: 1% 4%;
+
+          &:hover{
+            .button(#00BFFF, #FFDAB9)
+          }
+
+          @media @phone{
+            padding: 3% 43%;
+            margin: 2%;
+          }//closing bracket for .btn button @phone
+        }//closing bracket for .walk .walk-text .btn button
+      
+      }//closing bracket for .walk .walk-text .btn
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{
+        width: 100%;
+      }//closing brackets for .walk .walk-img @phone
       
       img {
         width: 100%;
