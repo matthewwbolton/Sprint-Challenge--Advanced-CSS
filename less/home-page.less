@@ -43,8 +43,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+   .flex-center();
 
     .walk-text {
       width: 50%;
@@ -58,7 +57,18 @@
       }
 
       .btn {
-      }
+
+        button{
+          .button(@wild-sand, @btn-bg-color);
+          border-radius: 5px;
+          padding: 1% 4%;
+
+          &:hover{
+            .button(#00BFFF, #FFDAB9)
+          }
+        }//closing bracket for .walk .walk-text .btn button
+      
+      }//closing bracket for .walk .walk-text .btn
     }
 
     .walk-img {
